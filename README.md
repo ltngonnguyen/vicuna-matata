@@ -16,7 +16,9 @@ conda create -n vicuna-matata python=3.10.9
 conda activate vicuna-matata 
 ```
 
-**Alternatively**, you can just use this little command to install everything and skip to Step 4:
+###Alternatively 
+
+You can just use this little command to install everything and **skip to Step 4**:
 ```
 conda create -n vicuna-matata pytorch torchvision torchaudio pytorch-cuda=11.7 cuda-toolkit -c 'nvidia/label/cuda-11.7.0' -c pytorch -c nvidia
 conda activate vicuna-matata
@@ -62,7 +64,7 @@ cd GPTQ-for-LLaMa
 python setup_cuda.py install
 ```
 
-NOTE: `python setup_cuda.py install` will fail if you're using a GCC version higher than 11.5, so Google how to install multiple versions of GCC and then set the appropriate ENV variable. [Ubuntu](ttps://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on-ubuntu-20-04.htm). If you're on an Archlike bleeding edge rolling release distro (Arch, Artix, EndeavorOS, Manjaro, etc.), just install gcc9-bin from the AUR, then open up .bashrc or .zshrc or .profile and add `export CC=gcc-9 CXX=g++-9`, then `source .profile` (or .bashrc or .zshrc) 
+NOTE: `python setup_cuda.py install` will fail if you're using a GCC version higher than 11.5, so Google how to install multiple versions of GCC and then set the appropriate ENV variable. i.e. [Ubuntu](ttps://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on-ubuntu-20-04.htm). If you're on an Archlike bleeding edge rolling release distro (Arch, Artix, EndeavorOS, Manjaro, etc.), just install gcc9-bin from the AUR, then open up .bashrc or .zshrc or .profile and add `export CC=gcc-9 CXX=g++-9`, then `source .profile` (or .bashrc or .zshrc) 
 
 ## Step 7: Profit???
 
@@ -72,7 +74,7 @@ cd ..
 python server.py --model anon8231489123/vicuna-13b-GPTQ-4bit-128g --auto-devices --wbits 4 --groupsize 128 --chat
 ```
 
-Now open up your favourite web browser, type in http://127.0.0.1:7860 (or simply localhost:7860). You might also need to turn off your adblocker for it to work. And that's it, you now have access to one of the most powerful LLMs on the market, right from the comfort and privacy of your own PC.  
+Now open up your favourite web browser, type in http://127.0.0.1:7860 (or simply http://localhost:7860). You might also need to turn off your adblocker for it to work. And that's it, you now have access to one of the most powerful LLMs on the market, right from the comfort and privacy of your own PC.  
 
 The default interface will be an Instruct interface (similar to gpt3-davinci and the likes), if you want a chat interface (like ChatGPT), add `--chat` to the end of the `python server.py ...` command. 
 
