@@ -1,5 +1,7 @@
 # vicuna-matata
 
+#### An easy way to install Vicuna on Linux
+
 ---
 
 This repo showcases a quick and easy way to install [Vicuna](https://github.com/lm-sys/FastChat) by lm-sys, based on LLaMA by Meta, one of the most powerful LLMs on the market right now. From my short time playing around with it, I find Vicuna to be comparable to ChatGPT in many respects, and is one of the better LLaMA flavours right now (in comparison to Stanford's Alcapa or Berkeley's Koala).
