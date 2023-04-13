@@ -16,7 +16,7 @@ conda create -n vicuna-matata python=3.10.9
 conda activate vicuna-matata 
 ```
 
-###Alternatively 
+### Alternatively 
 
 You can just use this little command to install everything and **skip to Step 4**:
 ```
@@ -64,7 +64,7 @@ cd GPTQ-for-LLaMa
 python setup_cuda.py install
 ```
 
-NOTE: `python setup_cuda.py install` will fail if you're using a GCC version higher than 11.5, so Google how to install multiple versions of GCC and then set the appropriate ENV variable. i.e. [Ubuntu](ttps://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on-ubuntu-20-04.htm). If you're on an Archlike bleeding edge rolling release distro (Arch, Artix, EndeavorOS, Manjaro, etc.), just install gcc9-bin from the AUR, then open up .bashrc or .zshrc or .profile and add `export CC=gcc-9 CXX=g++-9`, then `source .profile` (or .bashrc or .zshrc) 
+NOTE: `python setup_cuda.py install` will fail if you're using a GCC version higher than 11.5, so Google how to install multiple versions of GCC and then set the appropriate ENV variable. i.e. [Ubuntu](https://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on-ubuntu-20-04.htm) . If you're on an Archlike bleeding edge rolling release distro (Arch, Artix, EndeavorOS, Manjaro, etc.), just install gcc9-bin from the AUR, then open up .bashrc or .zshrc or .profile and add `export CC=gcc-9 CXX=g++-9`, then `source .profile` (or .bashrc or .zshrc) 
 
 ## Step 7: Profit???
 
