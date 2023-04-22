@@ -52,7 +52,7 @@ pip install -r requirements.txt
 The Vicuna team did not provide their own weights, only the instructions on how to convert the LLaMA weights (which requires a ton of computing resources), but luckily [anon8231489123](https://huggingface.co/anon8231489123/vicuna-13b-GPTQ-4bit-128g) came to the rescue and did all that hard work for us. Still, it's a file downloaded from the internet, so use at your own risk.  
 
 ```
-python download_model.py anon8231489123/vicuna-13b-GPTQ-4bit-128g
+python download-model.py anon8231489123/vicuna-13b-GPTQ-4bit-128g
 ```
 
 ## Step 6: Install GPTQ for LLaMa (oobabooga's fork)
