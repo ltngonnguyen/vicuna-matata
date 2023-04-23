@@ -77,7 +77,7 @@ cd ..
 python server.py --model anon8231489123/vicuna-13b-GPTQ-4bit-128g --auto-devices --wbits 4 --groupsize 128
 ```
 
-Now open up your favourite web browser, type in http://127.0.0.1:7860 (or simply http://localhost:7860). You might also need to turn off your adblocker for it to work. And that's it, you now have access to one of the most powerful LLMs on the market, right from the comfort and privacy of your own PC.  
+Now open up your favourite web browser, type in http://127.0.0.1:7860 (or simply http://localhost:7860). You might also need to turn off your adblocker and proxy for it to work. And that's it, you now have access to one of the most powerful LLMs on the market, right from the comfort and privacy of your own PC.  
 
 The default interface will be an Instruct interface (similar to gpt3-davinci and the likes), if you want a chat interface (like ChatGPT), use `python server.py --model anon8231489123/vicuna-13b-GPTQ-4bit-128g --auto-devices --wbits 4 --groupsize 128 --chat` instead. 
 
